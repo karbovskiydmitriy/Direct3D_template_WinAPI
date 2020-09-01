@@ -7,6 +7,8 @@
 
 #define null ((Pointer)0)
 
+#define CUSTOMFVF_VERTEX (D3DFVF_XYZ | D3DFVF_DIFFUSE)
+
 struct Vertex
 {
 	float x, y, z;
