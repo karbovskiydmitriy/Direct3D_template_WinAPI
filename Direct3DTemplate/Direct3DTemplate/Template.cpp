@@ -127,7 +127,8 @@ void Init()
 	d3dVertexBuffer->Lock(0, 0, &p, 0);
 	memcpy(p, vertices, sizeof(Vertex) * veticesCount);
 	d3dVertexBuffer->Unlock();
-
+	
+	d3dDevice->SetFVF(CUSTOMFVF_VERTEX);
 	d3dDevice->SetRenderState(D3DRS_LIGHTING, false);
 }
 
@@ -145,7 +146,6 @@ void Draw()
 
 	d3dDevice->BeginScene();
 
-	d3dDevice->SetFVF(CUSTOMFVF_VERTEX);
 	d3dDevice->SetStreamSource(0, d3dVertexBuffer, 0, sizeof(Vertex));
 
 	D3DXMATRIX position;

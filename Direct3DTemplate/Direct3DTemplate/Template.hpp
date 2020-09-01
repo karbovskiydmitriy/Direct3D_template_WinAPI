@@ -16,6 +16,7 @@
 #define CAPTION "WinAPI program template"
 #define MAIN_CLASS_NAME "TemplateClass"
 
+#define CUSTOMFVF_VERTEX (D3DFVF_XYZ | D3DFVF_DIFFUSE)
 #define COLOR D3DCOLOR_XRGB(127, 127, 255)
 
 INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
